@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Boyfriend's Day, Monkey Boi 🐒💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  /* GENERAL */
+  body {margin:0; font-family:'Poppins', sans-serif; background: linear-gradient(135deg,#ffe6f0,#e6f0ff); color:#333; text-align:center; overflow-x:hidden;}
+  h2 {color:#ff4d88;}
+  
+  /* FLOATING HEARTS */
+  .heart-bg{position:fixed;width:100%;height:100%;pointer-events:none;top:0;left:0;z-index:0;overflow:hidden;}
+  .heart-bg span{position:absolute;font-size:1.5rem;animation:floatUp 6s linear infinite;opacity:0.8;}
+  @keyframes floatUp{0%{transform:translateY(0) rotate(0deg);opacity:0.8}100%{transform:translateY(-1200px) rotate(360deg);opacity:0}}
+
+  /* HEADER */
+  header{padding:80px 20px;position:relative;z-index:1;}
+  header h1{font-family:'Pacifico',cursive;font-size:3rem;color:#ff4d88;}
+  header p{font-size:1.2rem;color:#555;}
+  .sticker{position:absolute;width:100px;z-index:1;transition:transform 0.3s; animation:moveSticker 5s ease-in-out infinite alternate;}
+  @keyframes moveSticker{0%{transform:translateY(0px)}100%{transform:translateY(15px)}}
+
+  /* HEADER GIF */
+  .header-gif{width:150px;margin-top:20px;}
+
+  /* SECTION */
+  section{padding:60px 20px;position:relative;z-index:1; border-radius:30px; margin:30px auto; max-width:900px;}
+  .memories{background: #fff0f5; box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+  .reasons-section{background:#f0fff0; box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+  .note-section{background:#fff7fa; box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+  .surprise-section{background:#e6f7ff; box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+  .game-section{background:#fffaf0; box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+  .love-things-section{background:#fff0ff; box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+
+  /* PHOTO SCRAPBOOK */
+  .photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:20px;justify-items:center;}
+  .photo-card{position:relative;background:#fff7fa;padding:10px;border-radius:25px;box-shadow:0 6px 20px rgba(0,0,0,0.15);transition:transform 0.3s; transform: rotate(-2deg);}
+  .photo-card:hover{transform:scale(1.05) rotate(0deg);}
+  .photo-card img{width:160px;height:160px;object-fit:cover;border-radius:20px;}
+
+  /* REASONS LIST */
+  .reasons{max-width:700px;margin:auto;text-align:left;font-size:1.1rem;line-height:1.8;padding:20px;border-radius:20px;}
+  .reasons li{margin:10px 0; list-style:"❤️ ";}
+
+  /* NOTE */
+  .note{font-family:'Pacifico',cursive;font-size:1.5rem;padding:25px;border-radius:25px; max-width:600px; margin:20px auto; position:relative;}
+
+  /* LOVE THINGS CARDS */
+  .love-things{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:20px;justify-items:center;}
+  .love-card{background:#ffe6f0;padding:20px;border-radius:25px;box-shadow:0 6px 15px rgba(0,0,0,0.1);transition:transform 0.3s; text-align:center;}
+  .love-card:hover{transform:scale(1.05);}
+  .love-card img{width:60px;height:60px;margin-bottom:10px;}
+
+  /* BUTTON */
+  .btn{display:inline-block;background:#ff4d88;color:white;padding:12px 24px;border-radius:30px;font-size:1rem;text-decoration:none;cursor:pointer;transition:background 0.3s;}
+  .btn:hover{background:#ff80aa;}
+
+  /* HIDDEN SURPRISE */
+  .hidden{display:none;margin-top:20px;font-size:1.2rem;color:#444;padding:20px;border-radius:15px;}
+
+  /* GAME */
+  #gameArea{position:relative;width:100%;height:320px;border-radius:25px;margin-top:20px;overflow:hidden;}
+  .kiss{position:absolute;font-size:2rem;cursor:pointer;animation:float 3s linear forwards;}
+  @keyframes float{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-350px);opacity:0}}
+
+  /* FOOTER */
+  footer{margin-top:60px;padding:20px;font-size:1rem;color:#666;}
+</style>
+</head>
+<body>
+
+<div class="heart-bg" id="heartBG"></div>
+
+<header>
+  <h1>Happy Boyfriend's Day 💕</h1>
+  <p>To my most favourite human on this planet</p>
+  <!-- Bubu & Dudu GIF -->
+  <img src="kiss-bubu-dudu.gif" class="header-gif" alt="Bubu Dudu Kiss GIF">
+</header>
+
+<section class="memories">
+  <h2>📸 Back to the beginning</h2>
+  <div class="photos">
+    <div class="photo-card"><img src="photo1.jpeg" alt="Memory 1"></div>
+    <div class="photo-card"><img src="photo2.jpeg" alt="Memory 2"></div>
+    <div class="photo-card"><img src="photo3.jpeg" alt="Memory 3"></div>
+    <div class="photo-card"><img src="photo4.jpeg" alt="Memory 4"></div>
+  </div>
+</section>
+
+<section class="reasons-section">
+  <h2>❤️ Reasons why I love you</h2>
+  <ul class="reasons">
+    <li>You are my best friend.</li>
+    <li>You are the brightest star in my sky.</li>
+    <li>Your hugs feel like home.</li>
+    <li>You never say no to my spontaniety.</li>
+    <li>You believe in me more than I do.</li>
+    <li>Life is simply better with you in it.</li>
+  </ul>
+</section>
+
+<section class="note-section">
+  <h2>💌 A Little Note</h2>
+  <div class="note">
+    Forever grateful to have you in my life.<br>
+    You are my best friend, my safe space and my favourite person. The universe really brought me here so I could find my way to you.<br>
+    Happy Boyfriend’s Day, my love! 💖
+  </div>
+</section>
+
+<section class="love-things-section">
+  <h2>💖Some of the many things I love doing with you💖</h2>
+  <div class="love-things">
+    <div class="love-card">
+      <img src="dudu-bubu.gif" alt="Chai">
+      Sipping on chai ☕
+    </div>
+    <div class="love-card">
+      <img src="cute-dancing-bubu-and-dudu-lo6d1pc8xwi3pmzj.gif" alt="Dance">
+      Slow dancing at home 💃🕺
+    </div>
+    <div class="love-card">
+      <img src="dudu-bubu (1).gif" alt="Street Food">
+      Eating street food 🌮
+    </div>
+    <div class="love-card">
+      <img src="dudu-bubu-dudu-giving-showers-bubu.gif" alt="Hot Shower">
+      Hot showers 🚿
+    </div>
+    <div class="love-card">
+      <img src="dudu-bubu-dudu-bubu-popcorn.gif" alt="Movies">
+      Watching movies & shows 🎬
+    </div>
+  </div>
+</section>
+
+<section class="surprise-section">
+  <h2>🎁 Click for a Surprise</h2>
+  <button class="btn" onclick="document.getElementById('secret').style.display='block'">Open ❤️</button>
+  <div id="secret" class="hidden">
+    You’re the best thing that ever happened to me.<br>
+    Let’s make more memories together, today and always. 😘<br>
+    🎶 P.S. I made you a playlist: <a href="https://open.spotify.com/playlist/4VHdx0Hy7lEG3yXnKPyl0z?si=ZosZs6MzR1Gzh0CYq_emsA&pi=a-KFhYFHJZTnif" target="_blank">Click here</a>
+  </div>
+</section>
+
+<section class="game-section">
+  <h2>🎮 Catch the kisses 💋</h2>
+  <p>Collect as many kisses as you can before time runs out!</p>
+  <button class="btn" onclick="startGame()">Start Game</button>
+  <p id="score">Score: 0</p>
+  <div id="gameArea"></div>
+</section>
+
+<footer>Forever Yours, Subha 💌 | With all my love ✨</footer>
+
+<!-- AUDIO -->
+<audio id="bgMusic" loop>
+  <source src="Love Me Thoda Aur_128-(PagalWorld.Org.Im).mp3" type="audio/mpeg">
+</audio>
+<audio id="clickSound">
+  <source src="https://freesound.org/data/previews/320/320655_5260875-lq.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // FLOATING HEARTS
+  function createHearts(){
+    const heartBG=document.getElementById('heartBG');
+    setInterval(()=>{
+      const heart=document.createElement('span');
+      heart.innerHTML='💖';
+      heart.style.left=Math.random()*window.innerWidth+'px';
+      heart.style.fontSize=(10+Math.random()*20)+'px';
+      heartBG.appendChild(heart);
+      setTimeout(()=>heart.remove(),6000);
+    },400);
+  }
+  createHearts();
+
+  // AUDIO
+  const bgMusic=document.getElementById('bgMusic');
+  const clickSound=document.getElementById('clickSound');
+  bgMusic.volume=0.2; clickSound.volume=0.5;
+  function playSound(type){
+    if(type==='start'){ bgMusic.play(); }
+    if(type==='click'){ clickSound.play(); }
+  }
+
+  // GAME LOGIC
+  let score=0; let gameInterval;
+  function startGame(){
+    score=0;
+    document.getElementById("score").innerText="Score: 0";
+    const gameArea=document.getElementById("gameArea");
+    gameArea.innerHTML="";
+    playSound('start');
+    if(gameInterval) clearInterval(gameInterval);
+    gameInterval=setInterval(()=>{
+      const kiss=document.createElement("div");
+      kiss.classList.add("kiss");
+      kiss.innerHTML="💋";
+      kiss.style.left=Math.random()*(gameArea.offsetWidth-30)+"px";
+      kiss.style.top=gameArea.offsetHeight-40+"px";
+      kiss.onclick=()=>{
+        score++; document.getElementById("score").innerText="Score: "+score; playSound('click'); kiss.remove();
+      }
+      gameArea.appendChild(kiss);
+      setTimeout(()=>{if(gameArea.contains(kiss)) kiss.remove();},3000);
+    },1000);
+    setTimeout(()=>{clearInterval(gameInterval)},30000);
+  }
+</script>
+</body>
+</html>
